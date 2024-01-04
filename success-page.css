@@ -1,0 +1,60 @@
+*{
+    max-width: 1440px;
+    max-height: 800px;
+}
+body{
+    background: hsl(235, 18%, 26%);
+}
+.hidden{
+    display: none;
+}
+
+
+.success{
+    background: #fff;
+    color: hsl(234, 29%, 20%);
+
+    width: 400px;
+    height: 330px;
+    margin: 150px auto 10px;
+    border-radius: 20px;
+}
+#success-text-checkmark{
+    margin: 30px 0 0 40px;
+    font-size: 40px;
+}
+.thanks, .conf-txt{
+    width: 320px;
+    margin: auto;
+}
+.thanks{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 35px;
+    margin-top: 25px;
+}
+.conf-txt{
+    font-size: 12px;
+    font-weight: 400px;
+    margin-top: 15px;
+}
+
+.btn{
+    background: hsl(234, 29%, 20%);
+    color: #fff;
+    width: 320px; margin: 30px 40px 0; height: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: x-small;
+    border-radius: 5px;
+
+}
+.btn:hover{
+    background: #f280c8;
+    background-image: -webkit-linear-gradient(top, #f280c8, #eb8c4d);
+    background-image: -moz-linear-gradient(top, #f280c8, #eb8c4d);
+    background-image: -ms-linear-gradient(top, #f280c8, #eb8c4d);
+    background-image: -o-linear-gradient(top, #f280c8, #eb8c4d);
+    background-image: linear-gradient(to bottom, #f280c8, #eb8c4d);
+    text-decoration: none;
+}

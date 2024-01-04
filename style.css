@@ -25,10 +25,8 @@ body{
     
     margin: 45px 0 0 5%;
 }
-
 .heading{width: fit-content;}
 p, button, input{width: 100%;}
-
 .heading{
     font-weight: 700;
     font-size: 2.5em;
@@ -36,10 +34,10 @@ p, button, input{width: 100%;}
 
 .join-others{font-size: 12px;}
 
-.list{font-weight: 500; font-size: 12px; margin-top: 15px; line-height: 25px;}
+.list{font-weight: 500; font-size: 12px; line-height: 15px;}
 .fa-circle-check{margin-right: 5px; font-size: 1.2em;}
 
-label{
+label, .error-message{
     font-size: 10px; font-weight: 700; word-spacing: 1.5px;
 }
 input{
@@ -51,9 +49,19 @@ input{
     font-size: 13px;
     margin: 11px 0;
 }
+.error-message {
+    width: fit-content;
+    z-index: 2;
+    color: red;
+    margin-top: 5px;
+
+    position: relative;
+    bottom: 59px;
+    left: 65%;
+}
 .btn{
     background: hsl(234, 29%, 20%);
-
+    color: #fff;
     height: 35px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -62,7 +70,15 @@ input{
 
     margin-top: 15px;
 }
-
+.btn:hover{
+    background: #f280c8;
+    background-image: -webkit-linear-gradient(top, #f280c8, #eb8c4d);
+    background-image: -moz-linear-gradient(top, #f280c8, #eb8c4d);
+    background-image: -ms-linear-gradient(top, #f280c8, #eb8c4d);
+    background-image: -o-linear-gradient(top, #f280c8, #eb8c4d);
+    background-image: linear-gradient(to bottom, #f280c8, #eb8c4d);
+    text-decoration: none;
+}
 
 /* -------rhs-------- */
 
@@ -97,4 +113,14 @@ img{width: 90%; height: 90%; border-radius: 10px; float: right; margin-top: 15px
 
     width: 375px;
     height: 300px;
+}
+
+
+.invalid-email{
+    background-color: rgb(251, 203, 203);
+    border: .5px solid rgb(251, 203, 203);
+}
+
+.valid-email{
+    background-color: rgb(159, 240, 159);
 }
