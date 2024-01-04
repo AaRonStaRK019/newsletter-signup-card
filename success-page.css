@@ -23,7 +23,7 @@ body{
     margin: 30px 0 0 40px;
     font-size: 40px;
 }
-.thanks, .conf-txt{
+.thanks, #conf-txt{
     width: 320px;
     margin: auto;
 }
@@ -33,7 +33,7 @@ body{
     line-height: 35px;
     margin-top: 25px;
 }
-.conf-txt{
+#conf-txt{
     font-size: 12px;
     font-weight: 400px;
     margin-top: 15px;

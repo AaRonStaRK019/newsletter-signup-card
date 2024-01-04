@@ -10,13 +10,16 @@ function validateEmail() {
     const successCard = document.querySelector('.success');
     // Display error message if email is invalid
     const emailError = document.getElementById('emailError');
+
+    let encodedEmail = encodeURIComponent(email);
+
     if (!isValidEmail) {
       emailError.textContent = 'Valid email required';
       emailInput.classList.add('invalid-email');
     } else {
       emailError.textContent = ' ';
       emailInput.classList.add('valid-email');
-      window.location.href = './success.html?email=' + encodeURIComponent(email);
+      window.location.href = './success.html?email=' + encodedEmail;
     }
 }
 
